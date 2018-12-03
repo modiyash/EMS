@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}"/>
+    <title>Sign In</title>
+  </head>
+  <body class="text-center">
+    <form class="form-signin" method="post" action="">
+      {% csrf_token %}
+      <img class="mb-4" src="{% static 'images/logo.png' %}" alt="" width="57" height="45">
+      <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+      {{ form }}
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  </body>
+</html>
+{% endblock %}
+
+
+
