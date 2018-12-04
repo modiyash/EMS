@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'timesheetproject',
-        'USER': 'timehseetadmin',
+        'USER': 'timesheetadmin',
         'PASSWORD': 'adminadmin',
         'HOST': 'localhost',
         'PORT': '',

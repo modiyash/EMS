@@ -6,9 +6,9 @@ class EmployeeForm(forms.Form):
                                     widget=forms.TextInput(attrs={'class': 'form-control'}))
     employee_email = forms.EmailField(label='Email',
                                       widget=forms.EmailInput(attrs={'class': 'form-control'}))
-    employee_phone = forms.EmailField(label='Contact No.',
+    employee_phone = forms.CharField(label='Contact No.',
                                       widget=forms.TextInput(attrs={'class': 'form-control'}))
-    employee_designation = forms.EmailField(label='Designation',
+    employee_designation = forms.CharField(label='Designation',
                                       widget=forms.TextInput(attrs={'class': 'form-control'}))
 
 

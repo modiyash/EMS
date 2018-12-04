@@ -29,9 +29,9 @@ class Client(models.Model):
 class Employee(models.Model):
     employee_id = models.CharField(max_length=36, unique=True, default=uuid.uuid4)
     employee_name = models.CharField(max_length=30, null=True)
-    employee_email = models.EmailField(null=True)
-    employee_phone = models.CharField(max_length=13, null=True)
-    employee_designation = models.CharField(max_length=15, null=True)
+    employee_email = models.EmailField(null=True, unique=True)
+    employee_phone = models.CharField(max_length=13, unique=True, null=True)
+    employee_designation = models.CharField(max_length=100, null=True)
 
     class Meta:
         permissions = (

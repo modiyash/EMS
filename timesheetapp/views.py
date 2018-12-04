@@ -115,7 +115,7 @@ def add_employee(request):
                          employee_phone=form.cleaned_data['employee_phone'],
                          employee_designation=form.cleaned_data['employee_designation'])
             e.save()
-            user = User.objects.create_user(username=e.employee_email, password='defaultpassword')
+            user = User.objects.create_user(username=e.employee_email, password='defaultpassword', is_staff=True)
             permission = Permission.objects.get(name='Add new Timesheet Entry')
             user.user_permissions.add(permission)
             user.save()
