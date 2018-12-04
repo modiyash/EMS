@@ -17,7 +17,6 @@ pip==9.0.1
 psycopg2==2.7.5
 pycrypto==2.6.1
 pyparsing==2.2.0
-Python==2.7.15
 python-dateutil==2.7.2
 pytz==2018.4
 pyxdg==0.25
